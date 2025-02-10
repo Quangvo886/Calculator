@@ -35,6 +35,7 @@
             txtB = new TextBox();
             txtKetQua = new TextBox();
             button1 = new Button();
+            btnTru = new Button();
             SuspendLayout();
             // 
             // label1
@@ -95,11 +96,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // btnTru
+            // 
+            btnTru.Location = new Point(227, 225);
+            btnTru.Name = "btnTru";
+            btnTru.Size = new Size(94, 29);
+            btnTru.TabIndex = 7;
+            btnTru.Text = "Trừ";
+            btnTru.UseVisualStyleBackColor = true;
+            btnTru.Click += btnTru_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnTru);
             Controls.Add(button1);
             Controls.Add(txtKetQua);
             Controls.Add(txtB);
@@ -122,5 +134,6 @@
         private TextBox txtB;
         private TextBox txtKetQua;
         private Button button1;
+        private Button btnTru;
     }
 }
